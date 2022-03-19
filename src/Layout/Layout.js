@@ -3,16 +3,17 @@ import Header from './Header';
 import Upper from './Upper';
 import Lower from './Lower';
 import Footer from './Footer';
+import Browser from '../Browser';
 
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <h2>Event Slider</h2>
+      <div className='title'>Category</div>
       <Upper />
-      {children}
-      <h2>Product List</h2>
+      {children}<br></br><br></br><br></br>
+      <div className='title'>Product List</div>
       <Lower />
       <Footer />
     </>
